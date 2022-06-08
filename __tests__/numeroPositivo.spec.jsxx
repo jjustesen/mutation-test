@@ -1,0 +1,11 @@
+const numeroPositivo = require("../src/numeroPositivo");
+
+test("Deve retornar true para numeros positivos", () => {
+  expect(numeroPositivo(1)).toBe(true);
+});
+test("Deve retornar false para numeros positivos", () => {
+  expect(numeroPositivo(0)).toBe(false);
+});
+test("Deve retornar false para numeros negativos", () => {
+  expect(numeroPositivo(-1)).toBe(false);
+});
